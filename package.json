@@ -1,0 +1,20 @@
+{
+  "name": "sarsinti",
+  "version": "1.0.0",
+  "description": "Live earthquake map of Türkiye in your terminal. Braille-drawn, zero dependencies, AFAD / Kandilli / USGS.",
+  "type": "module",
+  "bin": { "sarsinti": "bin/sarsinti.js" },
+  "files": ["bin", "src"],
+  "engines": { "node": ">=18.17" },
+  "scripts": {
+    "start": "node bin/sarsinti.js",
+    "test": "node --test test/*.test.js",
+    "geo": "node scripts/build-geo.mjs",
+    "screenshot": "node bin/sarsinti.js snapshot --hours 72 --width 132 --height 38 --lang en --svg docs/screenshot.svg"
+  },
+  "keywords": ["earthquake", "deprem", "turkey", "türkiye", "afad", "kandilli", "cli", "terminal", "tui", "braille", "map"],
+  "author": "Umut Öztürk (https://umutozturk.me)",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/HIMURAw/sarsinti.git" },
+  "homepage": "https://github.com/HIMURAw/sarsinti#readme"
+}
